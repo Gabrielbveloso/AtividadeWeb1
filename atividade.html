@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    
+<form>
+
+   Login:<br>
+   <input type="text" placeholder="nome" id="nome" required><br>
+
+   E-mail:<br>
+   <input type="email" placeholder="email" id="email" required><br>
+
+   Telefone:<br>
+   <input type="text" placeholder="telefone" id="telefone"><br>
+
+   <input type="submit" onclick="imprimir()"><br><br>
+
+   As informações são: <span></span>
+
+</form>
+
+<script>
+    
+    var nome = document.getElementById('nome').value;
+    var email = document.getElementById('email').value;
+    var telefone = document.getElementById('telefone').value;
+    var informacoes = document.forms('span').value;
+    
+    function imprimir(){
+        
+        alert(nome + email + telefone);
+    
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    Insira um número:<br/>
+    <input id="n1" type="number"/> <br/>
+    <button onclick="calcular()">Calcular</button><br><br>
+    
+    O resultado é: <span></span><br><br>
+    
+    <script>
+
+    var n1 = document.querySelector('#n1')
+    var resultado = document.querySelector('span')
+
+    function calcular(){
+     if(n1>0 && n1 % 3 == 0){
+        n1*3*3*3
+     }else{
+        alert('Esse numero não é possitivo e não é divisivel por 3')
+     }
+    }
+    </script>
+</body>
+
+
+</html>
